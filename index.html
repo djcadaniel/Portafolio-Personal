@@ -6,9 +6,11 @@
 	<title>Daniel Castro</title>
 	<link rel="stylesheet" href="css/principal.css">
 	<link rel="icon" href="img/ico.svg">
+	<link rel="stylesheet" href="splide/splide.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	
 	<header class="header">
 		<div class="header-container container">
 			<div class="header-logo">
@@ -30,15 +32,112 @@
 				<h1>Hola, mi nombre es <br>
 				<span>Daniel Castro</span><br>
 				Desarrollador Front-end</h1>
-				<button>Contactar</button>
-	
+				<a href="" class="contactar">Contactar</a>
 			</div>
 			<div class="hero-image">
 				<figure>
-					<img src="img/img-hero.svg" alt="">
+					<img src="img/img-hero.svg" alt="" idth="600">
 				</figure>
 			</div>
 		</div>		
 	</section>
+	<section class="barra">
+		<div class="barra-container container">
+			<figure>
+				<a href=""><img src="img/down.png" alt=""></a>
+			</figure>
+		</div>
+	</section>
+	<section class="sobremi">
+		<div class="sobremi-container container">
+			<div class="sobremi-imgContainer">
+				<img src="img/DC.jpg"  alt="">
+			</div>
+			<div class="sobremi-description">
+				<h1>SOBRE MI</h1>
+				<div class="ba"></div>
+				<p class="mi-pimg"><img class="peru" src="img/peru.png"   alt=""> Huancayo - Perú</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quos explicabo labore. Delectus, sit suscipit sed aliquid tenetur culpa quo esse illo enim est obcaecati eveniet amet. Provident, veniam rerum?</p>
+				<a  class="contactar" href="">Ver Proyectos</a>
+			</div>
+		</div>
+	</section>
+	<section class="projects">
+		<div class="projects-container container">
+			<h1>PROYECTOS</h1>
+			<div class="projects-barra">
+				<div class="bar"></div>
+			</div>
+		</div>
+		<div class="splide-container container">
+			<div class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+						<li class="splide__slide"><img src="img/DC.jpg"  alt="">
+							<div class="descrip-splide">
+								
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam dolores et obcaecati ipsum quae vitae voluptatum error perspiciatis! Modi velit blanditiis, rem dicta dolor cupiditate commodi nesciunt magnam dolores.</p>
+							</div>
+						</li></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	</section>
+	<script>
+		new Splide( '.splide',{
+			
+		} ).mount();
+	</script>
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function () {
+			new Splide( '.splide', {
+			type    : 'loop',
+			perPage : 3,
+			autoplay: true,
+		} ).mount();
+		} );
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 </html>

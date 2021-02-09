@@ -62,3 +62,190 @@ html {
 	color: #7A7A7A;
 	font-size: 2rem;
 }
+
+.hero {
+	margin: 0 auto;
+
+}
+
+.hero-container {
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	box-sizing: border-box;
+	min-height: 88vh;
+}
+
+.hero-description {
+
+	align-self: end;
+}
+
+.hero-description h1 {
+	font-weight: 400;
+	color: #7A7A7A;
+	font-size: 3rem;
+	line-height: 40, 85px;
+}
+
+.hero-description span {
+	font-weight: 700;
+	color: #282828;
+	font-size: 8rem;
+
+}
+
+.contactar {
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #293DCB;
+	border-radius: 15px;
+	margin-top: 18px;
+	color: white;
+	text-decoration: none;
+	padding: 3% 11%;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.hero-image {
+	align-self: end;
+}
+
+.hero-image figure {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hero-image img {
+	width: 100%;
+	height: auto;
+}
+
+.barra-container {
+	display: flex;
+	justify-content: center;
+	padding: 10% 0;
+}
+
+.sobremi {
+	background-image: url("../img/Forma1.svg");
+}
+
+.sobremi-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sobremi-imgContainer {
+	width: 50%;
+	padding: 5%;
+
+}
+
+.sobremi-imgContainer img {
+	height: auto;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.sobremi-description {
+	width: 50%;
+
+}
+
+.sobremi-description h1 {
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+.ba {
+	height: 10px;
+	width: 16rem;
+	border-radius: 3px;
+	background-color: #293DCB;
+	;
+}
+
+.peru {
+	height: 32px;
+	width: 35px;
+}
+
+.mi-pimg {
+	display: flex;
+	align-items: center;
+	padding: 5% 0;
+
+}
+
+.sobremi-description p {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #7A7A7A;
+}
+
+.projects-container {
+	text-align: center;
+}
+
+.projects-container h1 {
+	margin-top: 12%;
+	font-size: 5rem;
+	font-weight: 700;
+	color: #282828;
+
+}
+
+.projects-barra {
+
+	display: flex;
+	justify-content: center;
+}
+
+.bar {
+	height: 10px;
+	width: 16rem;
+	border-radius: 3px;
+	background-color: #293DCB;
+}
+
+.splide-container {
+	margin-top: 5%
+}
+
+.splide__track {}
+
+.splide__list li {
+	background-color: #F4F4F4;
+	border-radius: 15px;
+	margin-right: 8px;
+}
+
+.splide__list li img {
+	height: 200px;
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+
+}
+
+.splide__pagination {
+	bottom: -2.5em !important;
+}
+
+.descrip-splide {
+	height: 200px;
+	display: flex;
+	align-items: center;
+	padding: 0 5%;
+	text-align: justify;
+	margin: 0;
+}
