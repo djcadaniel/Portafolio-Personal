@@ -22,8 +22,7 @@
 }
 
 .splide.is-active .splide__list {
-    display: flex;
-
+    display: flex
 }
 
 .splide__pagination {
@@ -124,9 +123,7 @@
     width: auto
 }
 
-/* arro */
 .splide__arrow {
-    display: none !important;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -140,7 +137,7 @@
     border: none;
     padding: 0;
     opacity: .7;
-    background: red
+    background: #ccc
 }
 
 .splide__arrow svg {
@@ -180,26 +177,25 @@
 
 .splide__pagination__page {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #7A7A7A;
+    width: 8px;
+    height: 8px;
+    background: #ccc;
     border-radius: 50%;
     margin: 3px;
     padding: 0;
     transition: transform .2s linear;
     border: none;
-    opacity: 1
+    opacity: .7
 }
 
-/* circulos */
 .splide__pagination__page.is-active {
     transform: scale(1.4);
-    background: #293DCB;
+    background: #fff
 }
 
 .splide__pagination__page:hover {
     cursor: pointer;
-    opacity: .9;
+    opacity: .9
 }
 
 .splide__pagination__page:focus {
@@ -209,7 +205,7 @@
 .splide__progress__bar {
     width: 0;
     height: 3px;
-    background: #ccc;
+    background: #ccc
 }
 
 .splide--nav>.splide__track>.splide__list>.splide__slide {
