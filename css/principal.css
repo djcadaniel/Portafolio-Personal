@@ -28,6 +28,11 @@ html {
 .header {
 
 	height: auto;
+	position: fixed;
+	z-index: 99;
+	background-color: #FFFFFF;
+	width: 100%;
+	top: 0;
 }
 
 .header-container {
@@ -70,7 +75,7 @@ html {
 
 .hero {
 	margin: 0 auto;
-
+	padding-top: 4%;
 }
 
 .hero-container {
