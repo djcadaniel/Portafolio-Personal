@@ -213,16 +213,6 @@ html {
 	justify-content: center;
 }
 
-.project1 {
-	display: flex;
-	flex-direction: column;
-}
-
-.project1 a {
-	font-size: 2rem;
-	padding: 3% 0;
-}
-
 .bar {
 	height: 10px;
 	width: 16rem;
@@ -234,35 +224,6 @@ html {
 	margin-top: 5%
 }
 
-.splide__track {}
-
-.splide__list li {
-	background-color: #F4F4F4;
-	border-radius: 15px;
-	margin-right: 8px;
-}
-
-.splide__list li img {
-	height: 200px;
-	width: 100%;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	object-fit: cover;
-
-}
-
-.splide__pagination {
-	bottom: -2.5em !important;
-}
-
-.descrip-splide {
-	height: 200px;
-	display: flex;
-	align-items: center;
-	padding: 0 5%;
-	text-align: justify;
-	margin: 0;
-}
 
 .expe {
 	margin: 0 auto;

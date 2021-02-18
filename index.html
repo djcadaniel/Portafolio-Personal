@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="splide/splide.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="css/splide/splide.min.css">
+
 </head>
 <body>
 	
@@ -80,13 +81,43 @@
 				</div>
 				<div class="projects-all">
 					<div class="project1">
-						<div class="img-cont-pro">
-							<a href="https://djcadaniel.github.io/EVALUACION-FINAL-CSS/retratos.html" target="_blank">	Proyecto de Fotos</a>
+						<div class="splide">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<div class="splide__slide__container">
+											<img src="img/DC.jpg" height="260px">
+										</div>
+										Lorem Ipsum Dolor Sit Amet
+									</li>
+									<li class="splide__slide">
+										<div class="splide__slide__container" >
+											<img src="img/DC.jpg" height="260px">
+										</div>
+										Lorem Ipsum Dolor Sit Amet
+									</li>
+									<li class="splide__slide">
+										<div class="splide__slide__container" >
+											<img src="img/DC.jpg" height="260px">
+										</div>
+										Lorem Ipsum Dolor Sit Amet
+									</li>
+									<li class="splide__slide">
+										<div class="splide__slide__container">
+											<img src="img/DC.jpg" height="260px">
+										</div>
+										Lorem Ipsum Dolor Sit Amet
+									</li>
+								</ul>
+							</div>
 						</div>
+						<!-- <div class="img-cont-pro">
+							<a href="https://djcadaniel.github.io/EVALUACION-FINAL-CSS/retratos.html" target="_blank">	Proyecto de Fotos</a>
+						</div> -->
 						
-						<a href="https://djcadaniel.github.io/1er-Curso---DesarrolloWebOnline/"  target="_blank">Portafolio Personal</a>
+						<!-- <a href="https://djcadaniel.github.io/1er-Curso---DesarrolloWebOnline/"  target="_blank">Portafolio Personal</a>
 						<a href="https://djcadaniel.github.io/EVALUACION-FINAL-CSS/retratos.html"  target="_blank">Terminando Bootstrap</a>
-						<a href="https://djcadaniel.github.io/LandinMOVIE/"  target="_blank">Terminando Grids</a>
+						<a href="https://djcadaniel.github.io/LandinMOVIE/"  target="_blank">Terminando Grids</a> -->
 					</div>
 				</div>
 			</div>
@@ -240,17 +271,8 @@
 			}
 		});
 	</script>
-	<script>
-			new Splide( '.splide' ).mount();
-		</script>
-	</script>
-	<script>
-		document.addEventListener( 'DOMContentLoaded', function () {
-			new Splide( '.splide', {
-				height: auto,
-		} ).mount();
-		} );
-	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script src="js/splide/splide.js"></script>
 	
 </body>
 </html>
