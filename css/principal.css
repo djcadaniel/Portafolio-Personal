@@ -198,7 +198,9 @@ html {
 .projects-container {
 	text-align: center;
 }
-
+.projects-container img {
+	max-width: 100%;
+}
 .projects-container h1 {
 	margin-top: 12%;
 	font-size: 5rem;
