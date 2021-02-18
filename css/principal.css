@@ -198,9 +198,11 @@ html {
 .projects-container {
 	text-align: center;
 }
+
 .projects-container img {
 	max-width: 100%;
 }
+
 .projects-container h1 {
 	margin-top: 12%;
 	font-size: 5rem;
@@ -222,10 +224,39 @@ html {
 	background-color: var(--color-btn);
 }
 
-.splide-container {
-	margin-top: 5%
+.splide--container {
+	padding: 5% 0;
+
 }
 
+.splide--flex {
+	display: flex;
+	flex-flow: column wrap;
+	height: 60vh;
+}
+
+.splide__slide__container {
+	height: 50%;
+
+}
+
+.splide__slide__container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.splide__slide__description {
+	background-color: #F4F4F4;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 15px 15px;
+	padding: 10px;
+	text-align: justify;
+}
 
 .expe {
 	margin: 0 auto;
@@ -422,7 +453,7 @@ html {
 		display: grid;
 		grid-template-columns: 1fr;
 		box-sizing: border-box;
-		min-height: 88vh;
+		min-height: 37vh;
 		align-items: center;
 
 	}
