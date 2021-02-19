@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/splide/splide.min.css" />
+    <link rel="stylesheet" href="css/particles/style.css">
   </head>
   <body>
     <i class="fas fa-bars burger--button" id="burger-menu"></i>
@@ -36,26 +37,30 @@
         </nav>
       </div>
     </header>
+    
     <section class="hero">
-      <div class="hero-container container">
-        <div class="hero-description">
-          <div class="hero-des1">
-            <h1>
-              Hola, mi nombre es <br />
-              <span>Daniel Castro</span><br />
-              Desarrollador Front-end
-            </h1>
+      <div id="particles-js" class="particles container">
+        <div class="hero-container">
+          <div class="hero-description">
+            <div class="hero-des1">
+              <h1>
+                Hola, mi nombre es <br />
+                <span>Daniel Castro</span><br />
+                Desarrollador Front-end
+              </h1>
+            </div>
+            <div class="btn-contactar">
+              <a href="https://wa.me/977319959/?text=¿Podemos%20conversar%20Daniel%20Castro?" target="_blank" class="contactar">Contactar</a>
+            </div>
           </div>
-          <div class="btn-contactar">
-            <a href="https://wa.me/977319959/?text=¿Podemos%20conversar%20Daniel%20Castro?" target="_blank" class="contactar">Contactar</a>
+          <div class="hero-image">
+            <figure>
+              <img src="img/img-hero.svg" alt="" width="600" />
+            </figure>
           </div>
-        </div>
-        <div class="hero-image">
-          <figure>
-            <img src="img/img-hero.svg" alt="" width="600" />
-          </figure>
         </div>
       </div>
+      
     </section>
     <section class="barra">
       <div class="barra-container container">
@@ -329,5 +334,8 @@
           
       }
   </script>
+  <script src="js/particles/particles.js"></script>
+  <script src="js/particles/app.js"></script>
+  <script src="js/particles/main.js"> </script>
   </body>
 </html>

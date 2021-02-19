@@ -22,7 +22,7 @@ html {
 .container {
 	width: 90%;
 	margin: 0 auto;
-	/* border: 1px solid red; */
+
 }
 
 .header {
@@ -96,15 +96,23 @@ html {
 
 }
 
-.hero-container {
 
+.particles {
+	position: relative;
+}
+
+.hero-container {
+	position: absolute;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	box-sizing: border-box;
 	min-height: 88vh;
 	align-items: center;
-
+	top: 0;
 }
+
+
+
 
 .hero-description {}
 
