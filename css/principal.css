@@ -84,8 +84,8 @@ html {
 	text-align: center;
 	position: fixed;
 
-	left: 5px;
-	top: 5px;
+	right: 15px;
+	top: 15px;
 	color: white;
 	font-size: 2rem;
 }
@@ -465,11 +465,11 @@ html {
 	}
 
 	.header {
-		position: absolute;
+		position: fixed;
 	}
 
 	.header-container {
-		justify-content: center;
+		justify-content: left;
 	}
 
 	.header-logo {}
