@@ -22,7 +22,7 @@ html {
 .container {
 	width: 90%;
 	margin: 0 auto;
-
+	max-width: 1440px;
 }
 
 .header {
@@ -99,16 +99,24 @@ html {
 
 .particles {
 	position: relative;
+	height: 80vh;
 }
 
 .hero-container {
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	box-sizing: border-box;
 	min-height: 88vh;
 	align-items: center;
 	top: 0;
+	border-radius: 1px solid red;
 }
 
 
@@ -737,6 +745,11 @@ html {
 }
 
 @media screen and (max-width:480px) {
+	.particles {
+		position: relative;
+		height: 95vh;
+	}
+
 	.container {
 		width: 95%;
 
