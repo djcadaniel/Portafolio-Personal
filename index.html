@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="css/splide/splide.min.css" />
   </head>
   <body>
+    <i class="fas fa-bars burger--button" id="burger-menu"></i>
     <header id="header" class="header">
       <div class="header-container container">
         <div class="header-logo">
           <div class="logo"></div>
           <h1>DCDEV</h1>
         </div>
-        <nav class="menu">
+        <nav class="menu is-active">
           <ul>
             <li><a href="#header">Inicio</a></li>
             <li><a href="#sobremi">Sobre Mi</a></li>
@@ -298,5 +299,35 @@
         },
       });
     </script>
+    <script>
+      const ipad = window.matchMedia('screen and (max-width:768px)');
+      const menu = document.querySelector('.menu');
+      console.log(menu);
+      const burgerButton = document.querySelector('#burger-menu');
+      console.log(burgerButton);
+      
+
+      burgerButton.addEventListener('click', hideShow);
+
+      ipad.addListener(validation);
+
+      function validation(event){
+          if(event.matches){
+              burgerButton.addEventListener('click', hideShow)
+          }else{
+              burgerButton.removeEventListener('click', hideShow)
+          }
+      }
+      validation(ipad);
+
+      function hideShow(){
+          if(menu.classList.contains('is-active')){
+              menu.classList.remove('is-active');
+          }else{
+              menu.classList.add('is-active');
+          }
+          
+      }
+  </script>
   </body>
 </html>

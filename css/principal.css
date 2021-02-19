@@ -27,12 +27,13 @@ html {
 
 .header {
 
-	height: auto;
+	height: 80px;
 	position: fixed;
-	z-index: 99;
+	z-index: 3;
 	background-color: #FFFFFF;
 	width: 100%;
 	top: 0;
+
 }
 
 .header-container {
@@ -73,9 +74,26 @@ html {
 	font-size: 2rem;
 }
 
+.burger--button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+	line-height: 40px !important;
+	text-align: center;
+	position: fixed;
+
+	left: 5px;
+	top: 5px;
+	color: white;
+	font-size: 2rem;
+}
+
 .hero {
 	margin: 0 auto;
-	padding-top: 4%;
+	margin-top: 80px;
+
 }
 
 .hero-container {
@@ -444,14 +462,52 @@ html {
 	.container {
 		width: 95%;
 		margin: 0 auto;
+	}
 
+	.header {
+		position: absolute;
+	}
+
+	.header-container {
+		justify-content: center;
 	}
 
 	.header-logo {}
 
 	.menu {
-		display: none;
-		background-color: red;
+		position: fixed;
+		background-color: rgba(0, 0, 0, .9);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 6;
+		left: -100vw;
+		width: 100%;
+		transition: .7s;
+	}
+
+	.menu.is-active {
+		left: 0;
+	}
+
+	.menu ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, 1fr);
+		height: 100%;
+		align-items: center;
+		justify-items: center;
+
+
+	}
+
+	.menu ul li a {
+		color: white;
+		font-size: 3rem;
+	}
+
+	.burger--button {
+		z-index: 7;
 	}
 
 	.hero-container {
@@ -466,7 +522,7 @@ html {
 	.hero-description {
 		text-align: center;
 		display: flex;
-		padding: 4% 0;
+		padding: 10% 0;
 	}
 
 	.hero-des1 {
@@ -531,7 +587,7 @@ html {
 	}
 
 	.sobremi-container {
-		padding: 3%;
+		padding: 3% 0;
 	}
 
 	.sobremi-imgContainer {
@@ -585,7 +641,7 @@ html {
 
 	.projects-container {
 		text-align: center;
-		padding: 3%;
+		padding: 3% 0;
 	}
 
 	.projects-container h1 {
@@ -668,16 +724,19 @@ html {
 	.contacto .contacto-container .barra-contacto .barra-contacto2 {
 		width: 25%;
 		height: 10px;
-		background-color: red;
+		background-color: var(--color-btn);
 	}
 }
 
 @media screen and (max-width:480px) {
 	.container {
-		width: 100%;
+		width: 95%;
 
 		/* border: 1px solid red; */
 	}
+
+	.hero {}
+
 
 	.hero-description {
 		text-align: center;
