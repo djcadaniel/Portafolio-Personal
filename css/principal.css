@@ -126,14 +126,14 @@ html {
 
 .hero-description h1 {
 	font-weight: 400;
-	color: #7A7A7A;
+	color: white;
 	font-size: 3rem;
 	line-height: 40, 85px;
 }
 
 .hero-description span {
 	font-weight: 700;
-	color: #282828;
+	color: white;
 	font-size: 8rem;
 
 }
